@@ -1,0 +1,41 @@
+.sidebar-content-flex{
+  padding-right: 20%;
+  margin-top: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100%;
+}
+.to-dos-info{
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  color: #fff;
+  font-weight: 400;
+}
+.to-dos-info span{
+  font-weight: 900;
+}
+
+@media(max-width:720px){
+  .sidebar-content-flex{
+    flex-direction: row;
+    margin-top: 2.5rem;
+    padding:0;
+  }
+  .to-dos-info{
+    
+    width: 27.5%;
+    font-size: 1.5rem;
+    margin:0 1rem;
+  }
+  .to-dos-completed{
+    height: 2rem;
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .name-of-to-do-completed::after{
+    content: ",";
+  }
+}

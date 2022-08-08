@@ -1,0 +1,88 @@
+.creator-content{
+  margin: 5vh auto;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: hidden;
+}
+input{
+  height: 5vh;
+  width: 30%;
+  min-width: 225px;
+  border: none;
+  font-size: 1.8rem;
+  padding-left: 0.5rem;
+  margin-right: 5%;
+}
+input:focus{
+  outline: none;
+}
+
+.radio-group{
+  height: 6vh;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 5%;
+}
+.option{
+  display: none;
+}
+.option+label{
+  height: 6vh;
+  width: 6vh;
+  cursor: pointer;
+  
+}
+.option.margin-right +label{
+  margin-right: 2rem;
+}
+.option.red + label{
+
+ background-color: var(--red-color);
+}
+.option.orange+ label{
+
+  background-color: var(--orange-color);
+}
+.option.yellow+ label{
+  background-color: var(--yellow-color);
+}
+.option+label:hover{
+  height: 6vh;
+  width: 6vh;
+  box-sizing: border-box;
+  border:0.5vh solid black
+}
+.option+label[clicked="true"]{
+  border:0.5vh solid white;
+}
+
+.save-button{
+  height: 5vh;
+  width: 10%;
+  min-width: 75px;
+  border: none;
+  border-radius: 0.3vh;
+  font-size: 1.8rem;
+}
+.save-button:hover{
+  border: 0.1vh solid rgb(100, 100, 100);
+}
+
+@media (max-width:720px){
+  .creator-content{
+    margin: 0;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  input,.radio-group{
+  margin-right: 0;
+}
+
+}
+
